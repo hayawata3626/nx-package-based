@@ -9,8 +9,8 @@
     }
   ],
   "vulnerabilityAlerts": {
-    "enabled": true
+    "enabled": true,
+    "schedule": []
   },
-  "baseBranches": ["main"],
-  "schedule": ["after 5pm on Wednesday", "before 7pm on Wednesday"]
+  "baseBranches": ["main"]
 }
