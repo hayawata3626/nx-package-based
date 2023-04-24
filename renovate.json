@@ -13,5 +13,6 @@
     "schedule": []
   },
   "baseBranches": ["main"],
-  "schedule": ["after 10am on Friday", "before 12am on Friday"]
+  "osvVulnerabilityAlerts": true,
+  "additionalBranchPrefix": "{{parentDir}}-"
 }
