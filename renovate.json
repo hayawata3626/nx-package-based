@@ -1,13 +1,6 @@
 {
   "extends": ["config:base", ":timezone(Asia/Tokyo)", ":masterIssue", "group:monorepos"],
   "labels": ["renovate"],
-  "packageRules": [
-    {
-      "groupName": "only-security",
-      "matchPackagePatterns": ["*"],
-      "separateMajorMinor": false
-    }
-  ],
   "vulnerabilityAlerts": {
     "enabled": true,
     "schedule": []
