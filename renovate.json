@@ -2,10 +2,13 @@
   "extends": ["config:base", ":timezone(Asia/Tokyo)", ":masterIssue", "group:monorepos"],
   "labels": ["renovate"],
   "vulnerabilityAlerts": {
+    "separateMinorPatch": false,
     "enabled": true,
-    "schedule": []
+    "schedule": [],
+    "prCreation": "immediate",
+    "labels": ["renovate"]
   },
   "baseBranches": ["main"],
   "osvVulnerabilityAlerts": true,
-  "additionalBranchPrefix": "{{parentDir}}-"
+  "additionalBranchPrefix": "{{#if baseDir}}{{baseDir}}/{{else}}root/{{/if}}"
 }
